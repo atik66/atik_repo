@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="research-styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e2e6ea);
+}
+
+.research {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.research-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.research-item:hover {
+    background-color: #e2e6ea;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.research-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.research-info {
+    flex: 1;
+}
+
+.research-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.research-date {
+    font-size: 1rem;
+    color: #666;
+}
+
+.research-summary {
+    font-size: 1rem;
+    color: #444;
+    margin: 0.5rem 0;
+}
+
+.research-tech {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.research-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #007bff;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.research-link:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+.research-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 8px 0 0 8px;
+}
+
+        .detail-section {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.detail-section h3 {
+    margin-top: 0;
+}
+
+        .home-button {
+    background-color: #007bff; /* Adjust to match your design */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed; /* Keeps the button at the top of the page */
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Adjust to match your design */
+}
+
+    </style>
+</head>
+<body>
+    <button class="home-button" onclick="window.location.href='index.html'">Back to Home</button>
+    
+    <section class="research">
+        <h1 class="research-heading">Research Projects</h1>
+        <div class="research-list">
+            <div class="research-item">
+                <div class="research-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="research-info">
+                    <h2 class="research-title">Knowledge Graph Evolution Analyses</h2>
+                    <p class="research-date">Jan 2024 – Present</p>
+                    <p class="research-summary">
+                        Analyzing the evolution of knowledge graphs, focusing on their development over time and their impact on information retrieval and semantic understanding.
+                    </p>
+                    <p class="research-tech">Technologies: RDF, SPARQL, Java</p>
+                    <a href="#" class="research-link" onclick="toggleDetails('knowledge-graph')">Read More</a>
+                    <div id="knowledge-graph" class="detail-section">
+                        <h3>Knowledge Graph Evolution Analyses</h3>
+                        <p>
+                            Detailed description of the research on Knowledge Graph Evolution. Here you can provide more in-depth information about your findings, methodology, and results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="research-info">
+                    <h2 class="research-title">Open Data Portal Analyses and Bangladesh Trends</h2>
+                    <p class="research-date">Aug 2023 – Present</p>
+                    <p class="research-summary">
+                        Evaluating open data portals with a focus on Bangladesh trends, assessing data quality, accessibility, and impact on local governance and decision-making.
+                    </p>
+                    <p class="research-tech">Technologies: Python, Tableau, SQL</p>
+                    <a href="#" class="research-link" onclick="toggleDetails('open-data')">Read More</a>
+                    <div id="open-data" class="detail-section">
+                        <h3>Open Data Portal Analyses and Bangladesh Trends</h3>
+                        <p>
+                            Detailed description of the research on Open Data Portal Analyses and Bangladesh Trends. Include more comprehensive details on your analysis, methods, and outcomes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleDetails(id) {
+            var detailSection = document.getElementById(id);
+            var isVisible = detailSection.style.display === 'block';
+            // Hide all detail sections
+            document.querySelectorAll('.detail-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the clicked detail section if it was not already visible
+            if (!isVisible) {
+                detailSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

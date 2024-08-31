@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atik02</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+   
+<style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background for contrast */
+            color: #333;
+        }
+
+        /* Navigation */
+        .contain {
+            background-color: #333; /* Dark background for better visibility */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .tiv {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centered items vertically */
+        }
+
+        .tiv li {
+            margin: 0 1rem;
+        }
+
+        .tiv a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-radius: 4px; /* Added rounded corners */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+
+        .tiv a:hover {
+            background-color: #555; /* Slightly lighter dark gray for hover effect */
+            color: #fff; /* Ensured text color stays white on hover */
+        }
+
+        /* Hero Section */
+		.hero {
+    display: flex;
+    flex-direction: row; /* Side by side layout */
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hero-info {
+    flex: 1;
+    padding: 1rem;
+    text-align: right; /* Align text to the left */
+}
+
+.hero-info-heading {
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-info-subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.hero-info-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333; /* Dark color for button to match nav */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-info-button:hover {
+    background-color: #555; /* Lighter dark gray for hover */
+}
+
+.hero-img {
+    flex: 1;
+    text-align: left; /* Align image to the right */
+    margin-left: 1rem; /* Add some space between text and image */
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 300px; /* Reduced size for the image */
+    border-radius: 4px;
+}
+
+        /* About Section */
+        .about {
+            display: flex;
+            flex-direction: row; /* Side by side layout */
+            align-items: center;
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        .about-info {
+            flex: 1;
+            padding: 1rem;
+            text-align: left; /* Align text to the left */
+        }
+
+        .about-info-heading {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-info-disc {
+            font-size: 1rem;
+            line-height: 1.5;
+            max-height: 100px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .about-info-disc.expanded {
+            max-height: 300px;
+        }
+
+        .about-info-button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #333; /* Dark color to match button style */
+            background-color: #fff;
+            border: 1px solid #333;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .about-info-button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .about-img {
+            flex: 1;
+            text-align: center; /* Align image to the right */
+        }
+
+        .about-img img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 4px;
+			height: 350px;
+        }
+
+        /* Activity Section */
+   /* Activity Section */
+/* Activity Section */
+/* Activity Section */
+.service {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex; /* Use flexbox to align items */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px; /* Fixed height */
+    margin: 4rem;
+    padding: 1rem;
+    background-color: dimgray; /* Dark gray background for card */
+    color: #f0f0f0; /* Light text color for contrast */
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the height */
+    text-align: center; /* Center text inside the card */
+}
+
+.service-card i {
+    font-size: 3rem; /* Increase icon size for better visibility */
+    margin-bottom: 0.5rem;
+    color: #f0f0f0; /* Light color for the icon */
+}
+
+.service-card h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White color for heading */
+}
+
+.service-card p {
+    font-size: 0.9rem; /* Slightly smaller text for better fit */
+    margin: 0.5rem 0;
+    color: #d3d3d3; /* Light gray color for paragraph text */
+}
+
+.service-card a {
+    color: #add8e6; /* Light blue color for links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+        /* Hire Section */
+        .hire {
+            padding: 2rem;
+            background-color: #333; /* Dark background for hire section */
+            color: #fff;
+            text-align: center;
+        }
+
+        .hire-heading {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hire-button {
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hire-button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Footer */
+        /* General footer styling */
+/* General footer styling */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links, .footer-social, .footer-contact {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-links h2, .footer-social h2, .footer-contact h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #007BFF;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero,
+            .about,
+            .service,
+            .hire {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+                padding: 1rem;
+            }
+
+            .hero-img img,
+            .about-img img {
+                max-width: 100%;
+            }
+
+            .service-card {
+                width: 100%;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="contain">
+    <ul class="tiv">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#activity">Activity</a></li>
+    </ul>
+</section>
+
+<section id="hero" class="hero">
+    <div class="hero-info">
+        <h1 class="hero-info-heading">Design My Dream</h1>
+        <p class="hero-info-subheading">Believing in Allah.</p>
+        <a href="cv/CV (2).pdf" class="hero-info-button" target="_blank">Portfolio</a>
+    </div>
+    <div class="hero-img"><img src="image/Atik1.jpeg" alt="Atik"></div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-info">
+        <h1 class="about-info-heading">About Me</h1>
+        <p class="about-info-disc" id="about-text">
+            Assalamualaikum, I’m Atik, currently pursuing a BSc in Computer Science at the University of Chittagong. My journey through academia and personal projects has been driven by a desire to grow both professionally and personally. I am committed to becoming a well-rounded individual, focusing on continuous learning and ethical conduct. With a keen interest in technology and development, I work on various projects to enhance my skills and contribute positively to the community. My goal is to integrate my technical knowledge with a strong sense of integrity to make meaningful contributions in the field and in life        </p>
+        <button class="about-info-button" onclick="toggleAboutText()">Read More</button>
+    </div>
+    <div class="about-img"><img src="image/atik2.jpg" height="400px" width="400px" alt="About Me"></div>
+</section>
+
+<section id="activity" class="service">
+    <h1 class="service-header-heading">My Activity</h1>
+    <p class="service-header-description">
+        Explore my professional journey through blogs, projects, and research. Each section showcases my dedication to learning, innovation, and contributing to the field of technology and development.
+    </p>
+    <div class="service-card">
+        <i class="fas fa-blog"></i>
+        <h1>Blogs</h1>
+        <p>Sharing insights and experiences in tech, development, and personal growth.</p>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-project-diagram"></i>
+        <h1>Projects</h1>
+        <a href="project.html" target="_blank">Explore my work</a>
+    </div>
+    <div class="service-card">
+        <i class="fas fa-flask"></i>
+        <h1>Research</h1>
+        <a href="research.html" target="_blank">Discover my studies</a>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- <section class="hire">
+    <h1 class="hire-heading">Hire Me</h1>
+    <a href="mailto:your-email@example.com" class="hire-button">Contact Me</a>
+</section> -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                
+                <li><a href="research.html">Research</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h2>Follow Me</h2>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100011089714595" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/atik66" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="atikishrak66@gmail.com">atikishrak66@gmail.com</a></p>
+            <p>Phone: <a href="tel:01303822263">01303822263</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Atik. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+    function toggleAboutText() {
+        var text = document.getElementById("about-text");
+        if (text.classList.contains("expanded")) {
+            text.classList.remove("expanded");
+        } else {
+            text.classList.add("expanded");
+        }
+    }
+</script>
+
+</body>
+</html>

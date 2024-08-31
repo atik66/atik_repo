@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f3f4f6, #e1e2e5);
+        }
+
+        .projects {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .projects-heading {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project {
+            display: flex;
+            align-items: flex-start;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .project:hover {
+            background-color: #e2e6ea;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-icon {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-right: 1rem;
+        }
+
+        .project-info {
+            flex: 1;
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-date {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .project-tech {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .project-details li {
+            margin-bottom: 0.5rem;
+        }
+
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .code-section {
+            margin-top: 1rem;
+        }
+
+        .code-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .code-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Home</a>
+    <section class="projects">
+        <h1 class="projects-heading">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Big Data Evolution Tracking System</h2>
+                    <p class="project-date">May 2022 – Jul 2022</p>
+                    <p class="project-tech">Technologies: Java, Apache Jena</p>
+                    <ul class="project-details">
+                        <li>Developed a system to track historical versions and updates of big data in RDF format.</li>
+                        <li>Improved data retrieval speeds by 30% through efficient indexing.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/atik66/DeltaAndUpdateFinder" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">House Rental Service Web Application</h2>
+                    <p class="project-date">Jan 2023 – Apr 2023</p>
+                    <p class="project-tech">Technologies: JavaScript, PHP</p>
+                    <ul class="project-details">
+                        <li>Created a platform for listing and booking rental properties with a built-in payment gateway.</li>
+                        <li>Integrated a machine learning model to predict house prices based on historical data.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/atik66/Krishi-o-krishok-updated" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Krishi o Krishok Android App</h2>
+                    <p class="project-date">Sep 2022 – Dec 2022</p>
+                    <p class="project-tech">Technologies: Android, Java</p>
+                    <ul class="project-details">
+                        <li>Built an app to help farmers identify plant diseases using image recognition.</li>
+                        <li>Included a social feature to connect farmers with a community for sharing advice.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/yourusername/krishi-o-krishok" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Nari (Women Safety App)</h2>
+                    <p class="project-date">May 2022 – Jul 2022</p>
+                    <p class="project-tech">Technologies: Android, GPS Integration</p>
+                    <ul class="project-details">
+                        <li>Developed a safety app that continuously shares the user’s location with designated contacts.</li>
+                        <li>Implemented an emergency alert feature with a single button press.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/yourusername/nari-safety-app" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Library Management System</h2>
+                    <p class="project-date">May 2022 – Jul 2022</p>
+                    <p class="project-tech">Technologies: PHP, JavaScript</p>
+                    <ul class="project-details">
+                        <li>Designed a system for managing book inventories, lending, and user accounts.</li>
+                        <li>Enhanced user interface to streamline book searches and checkouts.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/atik66/seminar-management" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Weather Prediction Web Application</h2>
+                    <p class="project-date">Feb 2022 – Apr 2022</p>
+                    <p class="project-tech">Technologies: REST APIs, JavaScript</p>
+                    <ul class="project-details">
+                        <li>Created a web application that predicts weather conditions based on real-time data.</li>
+                        <li>Utilized RESTful APIs to provide accurate weather forecasts and alerts.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/atik66/app_for-weather" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Game Development Projects</h2>
+                    <p class="project-date">Various Dates</p>
+                    <p class="project-tech">Technologies: JavaScript, Android</p>
+                    <ul class="project-details">
+                        <li>Developed a Rock, Paper, Scissors web application with interactive UI.</li>
+                        <li>Created an Android Tic Tac Toe app with customizable game settings.</li>
+                    </ul>
+                    <div class="code-section">
+                        <a href="https://github.com/atik66/rock_paper_game" class="code-button" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
